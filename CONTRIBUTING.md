@@ -18,7 +18,7 @@ cd base-repo
 ## Set Upstream URL
 Open Terminal and paste the command below and hit enter.
 ```
-git add remote upstream git@github.com:janmaghuyop/base-repo.git
+git remote add upstream git@github.com:janmaghuyop/base-repo.git
 ```
 
 ## Create a feature branch.
