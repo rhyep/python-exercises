@@ -8,7 +8,7 @@ This is a multiple line comment.
 """
 
 
-# Values and Variables
+# Values and Variable
 print("I am a string") 	# String
 string = "String 2"
 print(string)
@@ -23,26 +23,35 @@ port_80 = 80
 
 # Float
 f = 21.21
+ff = 21.212121
+print("%.2f" % f)
+print("%.3f" % ff)
 
 # type
-type(4)
+print(type(4))
 f = 20.1
-type(f)
-type("Hey!")
+print(type(f))
+print(type("Hey!"))
 
 # multiple assignment
 a = 20
 a = 30
 a = 40
+print(a)
+a, b, c = 10, 20, 30
+print(a, b, c)
 
 # round
 a = 2.1
 b = round(a)
+print(a)
 a = 2.6
 c = round(a)
+print(c)
 aa = 2.15254
+print(aa)
 b = round(aa, 3)
-
+print(b)
 
 # string control codes
 print("A\nB\nC")
