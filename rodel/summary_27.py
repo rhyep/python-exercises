@@ -75,5 +75,21 @@ def ra(x):
             print("0",end="")
         print(end="\n")
 """
+def arr(x):
+    for i in range(x):
+        for j in range(i):
+            if i<(x/2):
+                print("0",end="")
+        print("0")
+
+"""
+def main(x):
+    while continue="no":
+
+
+"""
+
+
+
 a=int(input("input sq: "))
-ra(a)
+arr(a)
