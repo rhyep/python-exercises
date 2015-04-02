@@ -76,7 +76,7 @@ def ra(x):
 
 
 def arr(x):
-    if x <= 5:
+    if x > 5:
         for i in range(x):
             for j in range(i):
                 if i < (x / 2):
