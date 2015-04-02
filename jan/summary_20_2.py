@@ -13,7 +13,7 @@ assessed_value_bldg = float(input("Building : "))
 assessed_value_land = float(input("Land : "))
 
 """
-compute the basic tax by 1 percent of the assessed value both building and land.
+compute the basic tax by 1 percent of the assessed value both building and land
 then compute both it's annual tax
 then compute the total annual tax
 """
@@ -30,19 +30,19 @@ if the assessed value of the land is greater than or equal to 50,000
 """
 
 
-
 """
 accepts the current month in integer.
 """
 month = int(input("\n\nEnter month in integer : "))
 
 
-
 """
 if current month is march (3) and  below or before
-	compute for the discount (20 percent of annual_basic_tax both building and land)
+compute for the discount
+	(20 percent of annual_basic_tax both building and land)
 else
-	compute for the penalty (20 percent of annual_basic_tax both building and land).
+	compute for the penalty
+	(20 percent of annual_basic_tax both building and land).
 """
 
 if month <= 3:
@@ -61,7 +61,7 @@ if month <= 3:
 	total_penalty = 0
 
 else:
-	penalty_land =  annual_basic_tax_land * .20
+	penalty_land = annual_basic_tax_land * .20
 	penalty_bldg = annual_basic_tax_bldg * .20
 
 	total_penalty = penalty_land + penalty_bldg
