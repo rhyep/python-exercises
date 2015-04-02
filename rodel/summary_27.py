@@ -67,6 +67,13 @@ def rt(x):
         x-=1
         print(end="\n")
 """
+"""
+def ra(x):
 
+    for i in range(x):
+        for i in range(randrange(1,x)):
+            print("0",end="")
+        print(end="\n")
+"""
 a=int(input("input sq: "))
-rt(a)
+ra(a)
