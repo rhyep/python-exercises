@@ -58,6 +58,15 @@ def tr(x):
             print("0",end="")
         print(end="\n")
 """
+"""
+def rt(x):
+
+    for i in range(x):
+        for i in range(x):
+            print("0",end="")
+        x-=1
+        print(end="\n")
+"""
 
 a=int(input("input sq: "))
-tr(a)
+rt(a)
