@@ -26,7 +26,7 @@ total_annual_tax = annual_basic_tax_land + annual_basic_tax_bldg
 
 """
 if the assessed value of the land is greater than or equal to 50,000
-	compute additional tax of 20 percent of his land assessed value.
+    compute additional tax of 20 percent of his land assessed value.
 """
 
 
@@ -39,48 +39,49 @@ month = int(input("\n\nEnter month in integer : "))
 """
 if current month is march (3) and  below or before
 compute for the discount
-	(20 percent of annual_basic_tax both building and land)
+    (20 percent of annual_basic_tax both building and land)
 else
-	compute for the penalty
-	(20 percent of annual_basic_tax both building and land).
+    compute for the penalty
+    (20 percent of annual_basic_tax both building and land).
 """
 
 if month <= 3:
-	discount_land = annual_basic_tax_land * .20
-	discount_bldg = annual_basic_tax_bldg * .20
+    discount_land = annual_basic_tax_land * .20
+    discount_bldg = annual_basic_tax_bldg * .20
 
-	total_discount = discount_land + discount_bldg
+    total_discount = discount_land + discount_bldg
 
-	annual_land_tax = annual_basic_tax_land - discount_land
-	annual_bldg_tax = annual_basic_tax_bldg - discount_bldg
+    annual_land_tax = annual_basic_tax_land - discount_land
+    annual_bldg_tax = annual_basic_tax_bldg - discount_bldg
 
-	total_annual_tax = annual_land_tax + annual_bldg_tax
+    total_annual_tax = annual_land_tax + annual_bldg_tax
 
-	penalty_land = 0
-	penalty_bldg = 0
-	total_penalty = 0
+    penalty_land = 0
+    penalty_bldg = 0
+    total_penalty = 0
 
 else:
-	penalty_land = annual_basic_tax_land * .20
-	penalty_bldg = annual_basic_tax_bldg * .20
+    penalty_land = annual_basic_tax_land * .20
+    penalty_bldg = annual_basic_tax_bldg * .20
 
-	total_penalty = penalty_land + penalty_bldg
+    total_penalty = penalty_land + penalty_bldg
 
-	annual_land_tax = annual_basic_tax_land + penalty_land
-	annual_bldg_tax = annual_basic_tax_bldg + penalty_bldg
+    annual_land_tax = annual_basic_tax_land + penalty_land
+    annual_bldg_tax = annual_basic_tax_bldg + penalty_bldg
 
-	total_annual_tax = annual_land_tax + annual_bldg_tax
+    total_annual_tax = annual_land_tax + annual_bldg_tax
 
-	discount_land = 0
-	discount_bldg = 0
-	total_discount = 0
+    discount_land = 0
+    discount_bldg = 0
+    total_discount = 0
 
 
 if assessed_value_land >= 50000:
-	additional_tax = assessed_value_land * .2
-	total_annual_tax += additional_tax
+    additional_tax = assessed_value_land * .2
+    total_annual_tax += additional_tax
 else:
-	additional_tax = 0
+    additional_tax = 0
+
 
 print("\nAdditional tax : %.2f\n" % additional_tax)
 
