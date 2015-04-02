@@ -36,19 +36,17 @@ penaltyBuilding = 0
 additionalTax = 0
 
 taxLand = .01 * assessedValueLand
-taxBuilding  = .01 * assessedValueBuilding
+taxBuilding = .01 * assessedValueBuilding
 
 landAnnualTax = taxLand * 12
 buildAnnualTax = taxBuilding * 12
-
-
 
 
 if(assessedValueLand >= 50000):
     additionalTax = .20 * assessedValueLand
 
 
-if(month<=3):
+if(month <= 3):
     discLand = .20 * landAnnualTax
     discBuilding = .20 * buildAnnualTax
     landAnnualTax -= discLand
@@ -61,14 +59,41 @@ else:
     buildAnnualTax += penaltyBuilding
 
 
-totalAnnual = landAnnualTax + buildAnnualTax +  additionalTax
+totalAnnual = landAnnualTax + buildAnnualTax + additionalTax
 totalDisc = discLand + discBuilding
 totalPenalty = penaltyLand + penaltyBuilding
 
 
-
-print("NAME:",payerName,"\nBUILDING>>","\nDISCOUNT:","%.2f"%discBuilding,
-    "\nPENALTY:","%.2f"%penaltyBuilding,"\nTOTAL ANNUAL TAX:","%.2f"%buildAnnualTax,
-    "\nLAND>>","\nDISCOUNT:","%.2f"%discLand,"\nPENALTY:","%.2f"%penaltyLand,"\nTOTAL ANNUAL TAX:","%.2f"%landAnnualTax,"\n\n",
-    "\nTOTAL ANNUAL TAX:","%.2f"%totalAnnual,"\n TOTAL DISC:",
-    "%.2f"%totalDisc,"\nPENALTY:","%.2f"%totalPenalty)
+print(
+    "NAME:",
+    payerName,
+    "\nBUILDING>>",
+    "\nDISCOUNT:",
+    "%.2f" %
+    discBuilding,
+    "\nPENALTY:",
+    "%.2f" %
+    penaltyBuilding,
+    "\nTOTAL ANNUAL TAX:",
+    "%.2f" %
+    buildAnnualTax,
+    "\nLAND>>",
+    "\nDISCOUNT:",
+    "%.2f" %
+    discLand,
+    "\nPENALTY:",
+    "%.2f" %
+    penaltyLand,
+    "\nTOTAL ANNUAL TAX:",
+    "%.2f" %
+    landAnnualTax,
+    "\n\n",
+    "\nTOTAL ANNUAL TAX:",
+    "%.2f" %
+    totalAnnual,
+    "\n TOTAL DISC:",
+    "%.2f" %
+    totalDisc,
+    "\nPENALTY:",
+    "%.2f" %
+    totalPenalty)
