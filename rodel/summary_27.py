@@ -50,3 +50,14 @@ def sq(x):
         print(end="\n")
 
 """
+"""
+def tr(x):
+
+    for i in range(x+1):
+        for j in range(i):
+            print("0",end="")
+        print(end="\n")
+"""
+
+a=int(input("input sq: "))
+tr(a)
