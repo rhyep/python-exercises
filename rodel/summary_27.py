@@ -45,34 +45,29 @@ from random import randrange
 
 def sq(x):
     for i in range(x):
-        for j in range(x):
-            print("0", end="")
-        print(end="\n")
-
+        print("0" * x, end="")
+        print()
 
 def tr(x):
-
     for i in range(x + 1):
         for j in range(i):
             print("0", end="")
-        print(end="\n")
+        print("")
 
 
 def rt(x):
-
     for i in range(x):
         for i in range(x):
             print("0", end="")
         x -= 1
-        print(end="\n")
+        print("")
 
 
 def ra(x):
-
     for i in range(x):
         for i in range(randrange(1, x)):
             print("0", end="")
-        print(end="\n")
+        print("")
 
 
 def arr(x):
@@ -87,7 +82,6 @@ def arr(x):
 
 
 def fizzbuzz(x):
-
     for i in range(1, x + 1):
         if i % 3 == 0:
             print(i, " = Fizz")
@@ -102,7 +96,7 @@ def fizzbuzz(x):
 cont = "y"
 
 while cont == "y":
-    a = int(input("input sq: "))
+    a = int(input("input sq:"))
     sq(a)
     tr(a)
     rt(a)
