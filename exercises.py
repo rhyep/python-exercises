@@ -209,32 +209,48 @@ else:
     print("dunno")
 
 
-# Iteration
+# 22 nested if else
+name = "jan"
+if "j" in name:
+    if "a" in name:
+        print("yay!")
+    else:
+        print("non")
+    if "n" in name:
+        print("letters")
+else:
+    print("non")
+
+
+# 23 Iteration
 print(1)
 print(2)
 print(3)
+a = 0
+print(a + 1)
+print(a + 1)
+print(a + 1)
 
 
-# while loop
+# 24 while loop
 count = 1
 while count <= 3:
     print(count)
     count += 1
 
 
-# for loop
+# 25 for loop
 for n in range(1, 101):
     print(n)
+
 for n in range(100):
     print(n)
 
-
-# for step
 for n in range(100, 0, -5):
     print(n)
 
 
-# nested loops
+# 26 nested loops
 for r in range(11):
     for c in range(11):
         p = r * c
@@ -242,7 +258,8 @@ for r in range(11):
     print()
 
 
-# function
+# 27 function
+# from math import sqrt
 x = 16
 print(sqrt(16.0))
 y = 2 * sqrt(x + 16) - 4
