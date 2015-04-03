@@ -281,7 +281,8 @@ def count(n):
 count(10)
 
 
-# lambda
+# lambda, anonymous functions
+# functions that are not bound to a name
 def evaluate(f, x, y):
     return f(x, y)
 
@@ -289,6 +290,9 @@ evaluate(lambda x, y: 3*x + y, 10, 2)
 
 
 # generators
+count = 0
+
+
 def remember():
     global count
     count += 1
@@ -298,6 +302,7 @@ remember()
 remember()
 
 
+# yeild
 def gen():
     yield 3
     yield "wow"
@@ -307,13 +312,13 @@ def gen():
 print(gen)
 print(type(gen))
 print(gen())
-x = x gen()
+x = gen()
 print(x)
 print(next(x))
 print(next(x))
 
 
-# objects
+# 28 objects
 s = "ABCDEFG"
 print(len(s))
 print(s[2])
@@ -323,6 +328,11 @@ print(s[2])
 file = open('file.txt', 'r')
 for line in file:
     print(line)
+
+# file.txt
+# This is line 1
+# This is line 2
+# This is line 3
 
 
 # fraction
@@ -335,6 +345,13 @@ print(frac.denominator)
 # list
 a = []
 a.append(1, "a", 1.2)
+a.count("a")
+a.index(1)
+a.insert('x', 2)
+a.pop()
+a.remove(1)
+a.reverse()
+a.sort()
 print(a)
 a[2]
 
@@ -344,6 +361,43 @@ for i in a:
 a[:2]
 a[-1:]
 
+
+# tuples
+months = (
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December')
+
+print(months)
+print(months[1])
+print(months[0])
+print(months[4])
+
+
+# dictionaries
+phonebook = {
+    'Andrew Parson': 8806336,
+    'Emily Everett': 6784346,
+    'Peter Power': 7658344,
+    'Lewis Lame': 1122345}
+
+print(phonebook[1])
+print(phonebook['Lewis Lame'])
+phonebook['Jan Maghuyop'] = 99999
+del phonebook['Peter Power']
+print(phonebook.keys())
+print(phonebook.values())
+phonebook.clear()
+del phonebook
 
 # list comprehension
 b = [x ** 2 for x in range(20)]
