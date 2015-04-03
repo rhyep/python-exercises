@@ -24,6 +24,10 @@ def gens():
     yield 1.3
     yield -4
 
+<<<<<<< HEAD
+#print type
+=======
+>>>>>>> 80536ea2577cf9f0a9775656da4423833a99dc6e
 print(gens)
 print(type(gens))
 print(gens())
