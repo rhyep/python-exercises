@@ -25,11 +25,18 @@ def main():
         if x <= 4000000:
             n += 1
             print(x)
+<<<<<<< HEAD
+            if x % 2 == 0:
+                total += x
+        else:
+            break
+=======
             if fib(n) % 2 == 0:
                 total += x
         else:
             break
     print(x)
+>>>>>>> 06a013668cdf2c1eb0ffabf5bbc558bb09a32e7a
     print('Total is: ', total)
 
 if __name__ == '__main__':
