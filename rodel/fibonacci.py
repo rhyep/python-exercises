@@ -1,12 +1,16 @@
 # fibonacci.py
 
-count = 0
-prev = 0
+
+a = 1
 sum = 0
-while count < 3:
-    if sum == 1:
-        print(sum + count)
+evensum = 0
+
+for i in range(1, 10):
+    if i <= 2:
+        print(sum)
+        sum = 1
     else:
+<<<<<<< Updated upstream
         print(count)
     sum = count + prev
     prev = count
@@ -49,3 +53,11 @@ def main():
     print(">>>", total)
 if __name__ == "__main__":
     main()
+=======
+        temp = a
+        print(sum)
+        a = sum
+        sum = temp + a
+        if sum % 3 == 0:
+            evensum += sum
+>>>>>>> Stashed changes
